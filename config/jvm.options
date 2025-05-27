@@ -18,8 +18,14 @@
 ################################################################
 
 ## GC configuration
-  -XX:+UseG1GC
-  -XX:MaxGCPauseMillis=200
+-XX:+UseG1GC
+-XX:MaxGCPauseMillis=200
+
+## Java Module System configuration
+--add-exports=jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED
+--add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED
+--add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED
+
 
 ## Locale
 # Set the locale language
