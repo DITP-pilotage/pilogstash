@@ -18,9 +18,8 @@
 ################################################################
 
 ## GC configuration
--XX:+UseConcMarkSweepGC
--XX:CMSInitiatingOccupancyFraction=75
--XX:+UseCMSInitiatingOccupancyOnly
+  -XX:+UseG1GC
+  -XX:MaxGCPauseMillis=200
 
 ## Locale
 # Set the locale language
